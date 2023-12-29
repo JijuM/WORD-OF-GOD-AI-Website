@@ -1,0 +1,7 @@
+tunnels:
+  CHRIST APP:
+    proto: http
+    addr: 80
+    inspect: false
+    headers:
+      ngrok-skip-browser-warning: "true"

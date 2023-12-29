@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Word of God</title>
+  <link rel="stylesheet" href="../static/styles.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/png" href="../static/img/phands1.png"/>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+</head>
+<body>
+
+  <div id="myModal" class="modal">
+
+    <!-- Modal content -->
+    <div class="modal-content">
+      <span class="close">&times;</span>
+      <p>Created by Jiju Joseph and group of friends.We are currently building ML/DL/AI based applications/solutions for a better tomorrow,together with Tech.</p>
+    </div>
+  
+  </div>
+  <div class="cont">
+    <section> <div class = "header" > <img src="../static/img/phands.svg" width="30px" height="60px">
+      <i class="fas fa-question-circle" id="myBtn"></i></div> </section>
+
+    <div class = "">
+
+     
+
+      <div class = "word">
+
+        <img src="../static/img/phands.svg" width="60px" height="90px">
+          <h1>Word of God.ai</h1>
+          <sub>beta</sub>
+      </div>
+      <p class="word">
+        Have a conversation with an AI who has the wisdom of the bible at his fingertips.
+      </p>
+      <p class="word">
+        It will answer one question at a time, and is currently a work in progress.
+      </p>
+      <div class="prompts">
+        <button onclick="processInput('what are the commandments')">"What are the commandments?"</button>
+        <button onclick="processInput('Why did Jesus die on the cross?')">"Why did Jesus dies on the cross?"</button>
+        <button onclick="processInput('Teach me something')">"Teach me something"</button>
+      
+      </div>
+    </div>
+    <div class="container">
+    <input id="inputText" placeholder="What are you Thinking about?"></input>
+    <!-- <button onclick="processInput()">Process</button> -->
+    <div style = 
+    "width: fit-content;
+    height: fit-content;">
+    <i class="fas fa-paper-plane" onclick="processInput()"></i>
+    </div>
+  </div>
+    <div id="output"></div>
+  </div>
+  <script src="../static/script.js"></script>
+</body>
+</html>

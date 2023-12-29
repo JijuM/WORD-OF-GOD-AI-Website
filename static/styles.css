@@ -1,0 +1,277 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f4f4ff;
+  background-image: url("../static/img/jj.jpeg");
+  width:auto ;
+  object-fit: contain;
+  background-size: cover;
+  background-position:center center;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  height: auto;
+}
+
+.heading{
+  display:block;
+  width: 100%;
+  /*
+  margin-left: auto;
+  margin-right: auto; */
+}
+
+.word{
+  display : flex;
+  align-items: center;
+  margin-left: auto;
+  margin-right: auto;
+  width: fit-content;
+}
+.container {
+  display: flex;
+  width: 100%;
+  margin: 0;
+  text-align: center;
+  padding: 0;
+  position: absolute ;
+  bottom:0;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(255,255,255,0.2);
+
+
+ 
+}
+
+.container textarea{
+  opacity: 0.2;
+}
+
+input {
+  width: 100%;
+  height: 80px;
+  margin-bottom: 0;
+  text-align: left;
+  padding-left: 20px;
+  font-size: 20px;
+  background: transparent;
+  color: antiquewhite;
+}
+
+button {
+  padding: 10px 16px;
+  background-color: #3498db;
+  color: rgb(255, 255, 255);
+  border: none;
+  cursor: pointer;
+  opacity: 0.6;
+}
+
+button:hover {
+  background-color: #2980b9;
+}
+
+#output {
+  margin-top: 20px;
+}
+/* Style for the icon */
+i.fa-paper-plane {
+  font-size: 36px; /* Adjust size as needed */
+  color: white;
+  padding: 20px;
+  padding-left: 30px;
+  padding-right: 30px;
+  cursor: pointer;
+  opacity: 1;
+  object-position: center;
+}
+
+i.fa-paper-plane:hover {
+  object-position: center;
+  opacity: 0.2;
+  
+}
+
+.answer{
+  float : left;
+  width: 70%;
+  height: auto;
+  background-color: aliceblue;
+  opacity: 0.7;
+  padding-left: 25px;
+  padding-right: 25px;
+  padding-top: 25px;
+  padding-bottom: 25px;
+  border-radius: 10px;
+}
+.question{
+  float:right;
+  width : 70%;
+  height: auto;
+  background-color: aliceblue;
+  opacity: 0.7;
+  padding-left: 25px;
+  padding-right: 25px;
+  padding-top: 25px;
+  padding-bottom: 25px;
+  border-radius: 10px;
+  
+}
+
+#id{
+  position: absolute;
+  bottom: 106px;
+}
+/* 
+body {
+  width: 100vw;
+  height: 90vh;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+} */
+
+
+/* body .svgbg {
+  position: absolute;
+} */
+
+body .dot1,
+body .dot2,
+body .dot3 {
+  width: 16px;
+  height: 16px;
+  background: #f00;
+  border-radius: 50%;
+  margin-top: 48px;
+  /* position: absolute; */
+  background: #3a434f;
+  opacity: 0.2;
+}
+
+.dot1 {
+  margin-left: 8px;
+  -webkit-animation: Anime 1s ease-in-out infinite;
+  animation: Anime 1s ease-in-out infinite;
+}
+
+.dot2 {
+  margin-left: 15px;
+  -webkit-animation: Anime 1s 0.2s ease-in-out infinite;
+  animation: Anime 1s 0.2s ease-in-out infinite;
+}
+
+.dot3 {
+  margin-left: 24px;
+  -webkit-animation: Anime 1s 0.4s ease-in-out infinite;
+  animation: Anime 1s 0.4s ease-in-out infinite;
+}
+
+@-webkit-keyframes Anime {
+  0% {
+      margin-top: 6px;
+      opacity: 0.2;
+  }
+
+  50% {
+      margin-top: 3px;
+      opacity: 0.1;
+  }
+
+  100% {
+      margin-top: 3px;
+      opacity: 0.2;
+  }
+}
+
+@keyframes Anime {
+  0% {
+      margin-top: 6px;
+      opacity: 0.2;
+  }
+
+  50% {
+      margin-top: 3px;
+      opacity: 0.1;
+  }
+
+  100% {
+      margin-top: 6x;
+      opacity: 0.2;
+  }
+}
+.dots{
+  display: flex;
+  overflow: hidden;
+  height: 35px;
+  margin-top: -10px;
+}
+
+.prompts{
+  display: flex;
+  justify-content: space-between;
+  width:100%;
+  font-size: larger;
+  
+}
+.prompts button{
+  border-radius: 25px;
+  opacity: 0.7;
+  background-color: #3a434f;
+  width: 33%;
+}
+
+.header {
+  display: flex;
+  align-items: center;
+}
+.header img{
+  padding-right: 25px;
+  margin-left: 25px;
+  width: 40px;
+  height: 90px;
+  
+}
+.header .fas {
+  font-size:35px;
+  cursor: pointer;
+}
+
+/* The Modal (background) */
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  padding-top: 100px; /* Location of the box */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+/* Modal Content */
+.modal-content {
+  background-color: #fefefe;
+  margin: auto;
+  padding: 20px;
+  border: 1px solid #888;
+  width: 80%;
+  border-radius: 25px;
+}
+
+/* The Close Button */
+.close {
+  color: #aaaaaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+}

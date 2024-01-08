@@ -16,15 +16,13 @@ def index():
 @app.route('/process', methods=['POST'])
 def process():
     with open("content.txt", 'r') as file:
-    # Read file content
+    
         content = file.read()
-    # Do something with the content
+    
     
     data = request.get_json()
     input_text = data['text']
     
-    # Run your Python pipeline here with input_text
-    # Replace the following line with your actual Python pipeline processing
     
     print(input_text)
     
